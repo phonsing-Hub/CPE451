@@ -1,4 +1,4 @@
-import {StyleSheet,View,Image, SafeAreaView, TouchableOpacity } from 'react-native'
+import {StyleSheet,View, SafeAreaView, TouchableOpacity } from 'react-native'
 import { Text } from '@rneui/themed';
 import React from 'react'
 import Entypo from 'react-native-vector-icons/Entypo'
@@ -14,22 +14,20 @@ const Bills = ({navigation}) => {
       </TouchableOpacity>
       </View>
       <View style={styles.headerName}>
-        <Text h3>Bill Payment</Text>
+        <Text h3>ค่าห้อง</Text>
       </View>
-      {/* <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('pngtree')}>
+      <TouchableOpacity style={styles.bill} onPress={() => navigation.navigate('BillCal')}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <Image source={require('../Images/Pngtree.png')} style={styles.chat_img}/>
-          <Text h4>ติดต่อเจ้าหน้าที่</Text>
+          <Text h4>บิลค่าห้อง ค่าน้ำ ค่าไฟ</Text>
         </View>
         <Entypo name='chevron-right' size={40}/>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('chatAll')}>
+      <TouchableOpacity style={styles.bill} onPress={() => navigation.navigate('BillHistory')}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <Image source={require('../Images/creative.png')} style={styles.chat_img}/>
-          <Text h4> เเชทรวม</Text>
+          <Text h4>ประวัติการทำรายการ</Text>
         </View>
         <Entypo name='chevron-right' size={40}/>
-      </TouchableOpacity> */}
+      </TouchableOpacity>
    </SafeAreaView>
   )
 }
@@ -49,13 +47,13 @@ const styles = StyleSheet.create({
   headerName:{
     width:'100%',
     position:'absolute',
-    top: 70,
+    top: 10,
     justifyContent:'center',
     alignItems: 'center'
   },
-  chat:{
+  bill:{
     flexDirection: 'row',
-    margin:10,
+    margin:20,
     backgroundColor: '#fefefe',
     height: 100,
     borderRadius: 20,

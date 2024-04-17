@@ -16,6 +16,8 @@ import Pngtree from './src/Components/Pngtree';
 import ChatAll from './src/Components/ChatAll'
 import Login from './screen/Login';
 import Signup from './screen/SignUp';
+import BillCal from './src/Components/Bill Payment/BillCal';
+import BillHistory from './src/Components/Bill Payment/BillHistory';
 
 const Stack = createNativeStackNavigator();
 const AuthenticatedUserContext = createContext({});
@@ -41,6 +43,8 @@ function HomeStack() {
       <Stack.Screen name="service" component={Service} />
       <Stack.Screen name="pngtree" component={Pngtree} />
       <Stack.Screen name="chatAll" component={ChatAll} />
+      <Stack.Screen name="BillCal" component={BillCal} />
+      <Stack.Screen name="BillHistory" component={BillHistory} />
     </Stack.Navigator>
   );
 }
