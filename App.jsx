@@ -90,4 +90,3 @@ export default function App() {
   <RootNavigation />
   </AuthenticatedUserProvider>
 )}
-//apl
