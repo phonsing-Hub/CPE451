@@ -1,4 +1,4 @@
-import {StyleSheet,View, SafeAreaView, TouchableOpacity } from 'react-native'
+import {StyleSheet,View, Image ,SafeAreaView, TouchableOpacity } from 'react-native'
 import { Text } from '@rneui/themed';
 import React from 'react'
 import Entypo from 'react-native-vector-icons/Entypo'
@@ -18,11 +18,13 @@ const Bills = ({navigation}) => {
       </View>
       <TouchableOpacity style={styles.bill} onPress={() => navigation.navigate('BillCal')}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
+        {/* <Image source={require('../Images/Pngtree.png')} style={styles.chat_img}/> */}
           <Text h4>บิลค่าห้อง ค่าน้ำ ค่าไฟ</Text>
         </View>
         <Entypo name='chevron-right' size={40}/>
       </TouchableOpacity>
       <TouchableOpacity style={styles.bill} onPress={() => navigation.navigate('BillHistory')}>
+      {/* <Image source={require('../Images/Pngtree.png')} style={styles.chat_img}/> */}
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Text h4>ประวัติการทำรายการ</Text>
         </View>
