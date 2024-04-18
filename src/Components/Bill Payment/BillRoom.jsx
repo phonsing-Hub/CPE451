@@ -8,26 +8,36 @@ const BillRoom  = ({ roomRent, waterBill, electricityBill }) => {
   };
 
   return (
+    
     <View style={styles.container}>
       <View style={styles.itemContainer}>
-        <Text style={styles.label}>Room Rent:</Text>
-        <Text style={styles.value}>{roomRent} THB</Text>
+        <Text style={styles.label}>หมายเลขห้อง:</Text>
+        <Text style={styles.value}>101 </Text>
       </View>
       <View style={styles.itemContainer}>
-        <Text style={styles.label}>Water Bill:</Text>
-        <Text style={styles.value}>{waterBill} THB</Text>
+        <Text style={styles.label}>วัน เดือน ปี:</Text>
+        <Text style={styles.value}>30 กรกฏาคม 2024 </Text>
       </View>
       <View style={styles.itemContainer}>
-        <Text style={styles.label}>Electricity Bill:</Text>
-        <Text style={styles.value}>{electricityBill} THB</Text>
+        <Text style={styles.label}>ค่าห้อง:</Text>
+        <Text style={styles.value}>{roomRent} บาท</Text>
+      </View>
+      <View style={styles.itemContainer}>
+        <Text style={styles.label}>ค่าน้ำ:</Text>
+        <Text style={styles.value}>{waterBill} บาท</Text>
+      </View>
+      <View style={styles.itemContainer}>
+        <Text style={styles.label}>ค่าไฟ:</Text>
+        <Text style={styles.value}>{electricityBill} บาท</Text>
       </View>
       <View style={styles.totalContainer}>
-        <Text style={styles.totalLabel}>Total:</Text>
+        <Text style={styles.totalLabel}>รวมทั้งหมด:</Text>
         <Text style={styles.totalValue}>
-          {calculateTotal()} THB
+          {calculateTotal()} บาท
         </Text>
       </View>
     </View>
+    
   );
 };
 

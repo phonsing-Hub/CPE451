@@ -6,9 +6,9 @@ import Entypo from 'react-native-vector-icons/Entypo';
 
 const BillCal = ({navigation}) => {
   // กำหนดค่าของค่าใช้จ่ายต่าง ๆ
-  const roomRent = 5000; // เช่น ค่าเช่าห้อง 5000 บาท
-  const waterBill = 200; // เช่น ค่าน้ำ 200 บาท
-  const electricityBill = 300; // เช่น ค่าไฟ 300 บาท
+  const roomRent = 4500; 
+  const waterBill = 80; 
+  const electricityBill = 2416; 
 
   return (
     <SafeAreaView style={styles.contialner}>
@@ -17,13 +17,13 @@ const BillCal = ({navigation}) => {
       <Entypo name='chevron-left' size={40}/>
     </TouchableOpacity>
     </View>
-    <Text style={styles.heading}>Bill Summary</Text>
+    <Text style={styles.heading}>บิลรวมค่าห้อง</Text>
     <View style={styles.container}>
       {/* เรียกใช้งาน BillTemplate และส่งค่าของค่าใช้จ่ายไปเป็น prop */}
       <BillRoom
-        roomRent={3500}
-        waterBill={100}
-        electricityBill={1850}
+        roomRent={roomRent}
+        waterBill={waterBill}
+        electricityBill={electricityBill}
       />
     </View>
     

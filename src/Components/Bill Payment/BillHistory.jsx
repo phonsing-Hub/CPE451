@@ -6,22 +6,23 @@ import Entypo from 'react-native-vector-icons/Entypo';
 const BillHistory = ({navigation}) => {
   // ข้อมูลตัวอย่างของบิล
   const billData = [
-    { id: '1', roomNumber: '101', month: 'มกราคม 2024', roomRent: 3000, waterBill: 500, electricityBill: 700 },
-    { id: '2', roomNumber: '101', month: 'กุมภาพันธ์ 2024', roomRent: 3000, waterBill: 450, electricityBill: 680 },
-    { id: '3', roomNumber: '101', month: 'มีนาคม 2024', roomRent: 3000, waterBill: 480, electricityBill: 720 },
-    { id: '4', roomNumber: '101', month: 'เมษายน 2024', roomRent: 3000, waterBill: 520, electricityBill: 690 },
-    { id: '5', roomNumber: '101', month: 'พฤษภาคม 2024', roomRent: 3000, waterBill: 490, electricityBill: 710 },
-    { id: '6', roomNumber: '101', month: 'มิถุนายน 2024', roomRent: 3000, waterBill: 510, electricityBill: 730 },
+    { id: '1', roomNumber: '101', month: '30 มกราคม 2024', roomRent: 3500, waterBill: 100, electricityBill: 1850, total: 5450 },
+    { id: '2', roomNumber: '101', month: '28 กุมภาพันธ์ 2024', roomRent: 3500, waterBill: 80, electricityBill: 1940, total: 5520},
+    { id: '3', roomNumber: '101', month: '30 มีนาคม 2024', roomRent: 3500, waterBill: 100, electricityBill: 1765, total: 5365},
+    { id: '4', roomNumber: '101', month: '30 เมษายน 2024', roomRent: 3500, waterBill: 90, electricityBill: 1584, total: 5174 },
+    { id: '5', roomNumber: '101', month: '30 พฤษภาคม 2024', roomRent: 3500, waterBill: 110, electricityBill: 1698 ,total: 5308},
+    { id: '6', roomNumber: '101', month: '30 มิถุนายน 2024', roomRent: 3500, waterBill: 70, electricityBill: 1880, total: 5450},
   ];
 
   // ฟังก์ชันสำหรับแสดงรายการบิลแต่ละรายการ
   const renderBillItem = ({ item }) => (
     <View style={styles.billItem}>
-      <Text style={styles.billRoom}>ห้อง: {item.roomNumber}</Text>
-      <Text style={styles.billMonth}>เดือน: {item.month}</Text>
+      <Text style={styles.billRoom}>หมายเลขห้อง : {item.roomNumber}</Text>
+      <Text style={styles.billMonth}>วัน เดือน ปี : {item.month}</Text>
       <Text>ค่าห้อง: {item.roomRent} บาท</Text>
       <Text>ค่าน้ำ: {item.waterBill} บาท</Text>
       <Text>ค่าไฟ: {item.electricityBill} บาท</Text>
+      <Text>รวมทั้งหมด: {item.total} บาท</Text>
     </View>
   );
 
