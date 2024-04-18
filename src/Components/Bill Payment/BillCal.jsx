@@ -19,7 +19,7 @@ const BillCal = ({navigation}) => {
     </View>
     <Text style={styles.heading}>บิลรวมค่าห้อง</Text>
     <View style={styles.container}>
-      
+      {/* เรียกใช้งาน BillTemplate และส่งค่าของค่าใช้จ่ายไปเป็น prop */}
       <BillRoom
         roomRent={roomRent}
         waterBill={waterBill}
