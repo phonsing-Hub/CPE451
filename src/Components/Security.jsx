@@ -1,11 +1,18 @@
-import { View, Text,Button } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
+import Entypo from 'react-native-vector-icons/Entypo'
 
 const Security = ({navigation}) => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-     <Text>Security</Text>
-      <Button title="Go back" onPress={() => navigation.goBack()} />
+
+    
+    <TouchableOpacity onPress={() => navigation.goBack()}>
+    <Entypo name='uninstall' size={36} color={'red'}/>
+    </TouchableOpacity>
+    
+
+
     </View>
   )
 }
