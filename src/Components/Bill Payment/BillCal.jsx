@@ -7,8 +7,8 @@ import Entypo from 'react-native-vector-icons/Entypo';
 const BillCal = ({navigation}) => {
   // กำหนดค่าของค่าใช้จ่ายต่าง ๆ
   const roomRent = 4500; 
-  const waterBill = 80; 
-  const electricityBill = 2416; 
+  const waterBill = 110; 
+  const electricityBill = 1956; 
 
   return (
     <SafeAreaView style={styles.contialner}>
