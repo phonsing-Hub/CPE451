@@ -3,8 +3,6 @@
 # Getting Started
 
 ```bash
-# install package
-cd StayHost
 
 # using npm
 npm install
