@@ -33,7 +33,7 @@ const Bills = ({navigation}) => {
       <TouchableOpacity style={styles.bill} onPress={() => navigation.navigate('UploadSlip')}>
       <Image source={require('../Images/upload.png')} style={styles.chat_img}/>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <Text h4>อัปโหลดสลิป</Text>
+          <Text h4>อัปโหลดสลิปการจ่ายเงิน</Text>
         </View>
         <Entypo name='chevron-right' size={40}/>
       </TouchableOpacity>
