@@ -4,7 +4,7 @@ import { Text } from '@rneui/themed';
 import Entypo from 'react-native-vector-icons/Entypo';
 
 const BillHistory = ({navigation}) => {
-  // ข้อมูลตัวอย่างของบิล
+  
   const billData = [
     { id: '1', roomNumber: '101', month: '30 มกราคม 2024', roomRent: 3500, waterBill: 100, electricityBill: 1850, total: 5450 },
     { id: '2', roomNumber: '101', month: '28 กุมภาพันธ์ 2024', roomRent: 3500, waterBill: 80, electricityBill: 1940, total: 5520},
