@@ -30,6 +30,13 @@ const Bills = ({navigation}) => {
         </View>
         <Entypo name='chevron-right' size={40}/>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.bill} onPress={() => navigation.navigate('UploadSlip')}>
+      {/* <Image source={require('../Images/Pngtree.png')} style={styles.chat_img}/> */}
+      <View style={{flexDirection: 'row', alignItems: 'center'}}>
+          <Text h4>อัปโหลดสลิปการโอนเงิน</Text>
+        </View>
+        <Entypo name='chevron-right' size={40}/>
+      </TouchableOpacity>
    </SafeAreaView>
   )
 }

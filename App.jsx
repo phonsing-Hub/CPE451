@@ -18,6 +18,7 @@ import Login from './screen/Login';
 import Signup from './screen/SignUp';
 import BillCal from './src/Components/Bill Payment/BillCal';
 import BillHistory from './src/Components/Bill Payment/BillHistory';
+import UploadSlip from './src/Components/Bill Payment/UploadSlip';
 import Room from './src/Components/Contract/Room';
 import Return from './src/Components/Contract/Return';
 import Hire from './src/Components/Contract/Hire';
@@ -48,6 +49,7 @@ function HomeStack() {
       <Stack.Screen name="chatAll" component={ChatAll} />
       <Stack.Screen name="BillCal" component={BillCal} />
       <Stack.Screen name="BillHistory" component={BillHistory} />
+      <Stack.Screen name="UploadSlip" component={UploadSlip} />
       <Stack.Screen name="Room" component={Room} />
       <Stack.Screen name="Return" component={Return} />
       <Stack.Screen name="Hire" component={Hire} />
