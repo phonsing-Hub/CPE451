@@ -22,6 +22,11 @@ import UploadSlip from './src/Components/Bill Payment/UploadSlip';
 import Room from './src/Components/Contract/Room';
 import Return from './src/Components/Contract/Return';
 import Hire from './src/Components/Contract/Hire';
+import EmergencyReportScreen from './src/Components/Security/EmergencyReportScreen';
+import EmergencyReportScreen2 from './src/Components/Security/EmergencyReportScreen2';
+import EmergencyReportScreen3 from './src/Components/Security/EmergencyReportScreen3';
+import EmergencyReportScreen4 from './src/Components/Security/EmergencyReportScreen4';
+import EmergencyReportScreen5 from './src/Components/Security/EmergencyReportScreen5';
 
 const Stack = createNativeStackNavigator();
 const AuthenticatedUserContext = createContext({});
@@ -53,6 +58,11 @@ function HomeStack() {
       <Stack.Screen name="Room" component={Room} />
       <Stack.Screen name="Return" component={Return} />
       <Stack.Screen name="Hire" component={Hire} />
+      <Stack.Screen name="EmergencyReportScreen" component={EmergencyReportScreen} />
+      <Stack.Screen name="EmergencyReportScreen2" component={EmergencyReportScreen2} />
+      <Stack.Screen name="EmergencyReportScreen3" component={EmergencyReportScreen3} />
+      <Stack.Screen name="EmergencyReportScreen4" component={EmergencyReportScreen4} />
+      <Stack.Screen name="EmergencyReportScreen5" component={EmergencyReportScreen5} />
     </Stack.Navigator>
   );
 }
