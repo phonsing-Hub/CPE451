@@ -2,9 +2,10 @@ import React from 'react';
 import { View,StyleSheet,SafeAreaView,TouchableOpacity,FlatList } from 'react-native';
 import { Text } from '@rneui/themed';
 import Entypo from 'react-native-vector-icons/Entypo';
+import AntDesign from 'react-native-vector-icons/AntDesign'
 
 const BillHistory = ({navigation}) => {
-  // ข้อมูลตัวอย่างของบิล
+  
   const billData = [
     { id: '1', roomNumber: '101', month: '30 มกราคม 2024', roomRent: 3500, waterBill: 100, electricityBill: 1850, total: 5450 },
     { id: '2', roomNumber: '101', month: '28 กุมภาพันธ์ 2024', roomRent: 3500, waterBill: 80, electricityBill: 1940, total: 5520},
@@ -27,13 +28,18 @@ const BillHistory = ({navigation}) => {
   );
 
   return (
-    <SafeAreaView style={styles.contialner}>
-        <View style={styles.header}>
-            <TouchableOpacity onPress={()=>navigation.goBack()}>
-                <Entypo name='chevron-left' size={40}/>
-            </TouchableOpacity>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.headerBackground}>
+        <Text style={styles.headerText}>ประวัติการทำรายการ</Text>
+      </View>
+      <View style={[styles.section, styles.backButton]}>
+        <View style={styles.circularButton}>
+        <TouchableOpacity onPress={()=> navigation.goBack()}>
+          <AntDesign name='left' size={36} color={'#CA9CAC'}/>
+          </TouchableOpacity>     
         </View>
-        <Text style={styles.title}>Bill History</Text>
+      </View>
+      
         <FlatList
             data={billData}
             renderItem={renderBillItem}
@@ -45,26 +51,6 @@ const BillHistory = ({navigation}) => {
 
 const styles = StyleSheet.create({
 
-  contialner:{
-    flex:1,
-    backgroundColor: '#e7eaf6'
-  },
-  header:{
-    flexDirection: 'row',
-    padding:10,
-    zIndex:99
-  },
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: '#fff',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    textAlign: 'center',
-  },
   billItem: {
     marginBottom: 15,
     padding: 10,
@@ -81,6 +67,73 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginBottom: 5,
   },
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#f2eddd', // Background color
+  },
+  headerBackground: {
+    backgroundColor: '#a2a8d3',
+    borderRadius: 8,
+    padding: 10,
+    marginBottom: 20,
+    alignItems: 'center',
+    width: 370, // Set the desired width
+    height: 70,
+  },
+  headerText: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#f2eddd', // Header text color
+  },
+  section: {
+    marginBottom: 20,
+  },
+  backButton: {
+    position: 'absolute',
+    top: 35,
+    left: 30,
+  },
+  circularButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#f2eddd',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  label: {
+    fontSize: 18,
+  },
+  SlipUp: {
+    marginTop: 45,
+    alignItems: 'center',
+  },
+  imageContainer: {
+    borderRadius:'20',
+    alignItems: 'center',
+    marginBottom: 0,
+  },
+  image: {
+    width: 250,
+    height: 350,
+    borderRadius: 10,
+  },
+  backButton: {
+    position: 'absolute',
+    top: 30,
+    left: 30,
+  },
+  circularButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#ffffff',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
 });
 
 export default BillHistory;

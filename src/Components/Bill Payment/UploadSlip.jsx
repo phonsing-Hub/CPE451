@@ -1,17 +1,21 @@
 import {StyleSheet,View, Text, Image, Button,SafeAreaView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Entypo from 'react-native-vector-icons/Entypo'
-
+import AntDesign from 'react-native-vector-icons/AntDesign'
 
 const UploadSlip = ({navigation}) => {
   return (
-    <SafeAreaView style={styles.contialner}>
-      <View style={styles.header}>
-      <TouchableOpacity onPress={()=>navigation.goBack()}>
-        <Entypo name='chevron-left' size={40}/>
-      </TouchableOpacity>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.headerBackground}>
+        <Text style={styles.headerText}>อัปโหลดสลิป</Text>
       </View>
-      <Text style={styles.heading}>อัปโหลดสลิป</Text>
+      <View style={[styles.section, styles.backButton]}>
+        <View style={styles.circularButton}>
+        <TouchableOpacity onPress={()=> navigation.goBack()}>
+          <AntDesign name='left' size={36} color={'#CA9CAC'}/>
+          </TouchableOpacity>     
+        </View>
+      </View>
 
       
       <View style={styles.imageContainer}>
@@ -40,20 +44,41 @@ const UploadSlip = ({navigation}) => {
 export default UploadSlip;
 
 const styles = StyleSheet.create({
-  contialner:{
-    flex:1,
-    backgroundColor: '#e7eaf6'
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#f2eddd', // Background color
   },
-  header:{
-    flexDirection: 'row',
-    padding:10,
-    zIndex:99
-  },
-  heading: {
-    fontSize: 24,
-    fontWeight: 'bold',
+  headerBackground: {
+    backgroundColor: '#a2a8d3',
+    borderRadius: 8,
+    padding: 10,
     marginBottom: 20,
+    alignItems: 'center',
+    width: 370, // Set the desired width
+    height: 70,
+  },
+  headerText: {
+    fontSize: 28,
+    fontWeight: 'bold',
     textAlign: 'center',
+    color: '#f2eddd', // Header text color
+  },
+  section: {
+    marginBottom: 20,
+  },
+  backButton: {
+    position: 'absolute',
+    top: 35,
+    left: 30,
+  },
+  circularButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#f2eddd',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   label: {
     fontSize: 18,
@@ -74,7 +99,7 @@ const styles = StyleSheet.create({
   },
   backButton: {
     position: 'absolute',
-    top: 15,
+    top: 30,
     left: 30,
   },
   circularButton: {
@@ -85,5 +110,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  
   
 })
