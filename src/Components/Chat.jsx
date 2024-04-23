@@ -14,7 +14,7 @@ const Chat = ({navigation}) => {
       </TouchableOpacity>
       </View>
       <View style={styles.headerName}>
-        <Text h3>Chat</Text>
+        <Text h3>Message</Text>
       </View>
       <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('pngtree')}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
