@@ -1,6 +1,5 @@
 import {StyleSheet,View, Text, Image, Button,SafeAreaView, TouchableOpacity } from 'react-native'
 import React from 'react'
-import Entypo from 'react-native-vector-icons/Entypo'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 
 const UploadSlip = ({navigation}) => {
@@ -10,7 +9,7 @@ const UploadSlip = ({navigation}) => {
         <Text style={styles.headerText}>อัปโหลดสลิป</Text>
       </View>
       <View style={[styles.section, styles.backButton]}>
-        <View style={styles.circularButton}>
+        <View style={styles.Button}>
         <TouchableOpacity onPress={()=> navigation.goBack()}>
           <AntDesign name='left' size={36} color={'#CA9CAC'}/>
           </TouchableOpacity>     
@@ -72,7 +71,7 @@ const styles = StyleSheet.create({
     top: 35,
     left: 30,
   },
-  circularButton: {
+  Button: {
     width: 40,
     height: 40,
     borderRadius: 20,
@@ -97,19 +96,4 @@ const styles = StyleSheet.create({
     height: 350,
     borderRadius: 10,
   },
-  backButton: {
-    position: 'absolute',
-    top: 30,
-    left: 30,
-  },
-  circularButton: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: '#ffffff',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  
-  
 })
