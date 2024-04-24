@@ -22,20 +22,20 @@ const Bills = ({navigation}) => {
 
       <TouchableOpacity style={styles.bill} onPress={() => navigation.navigate('BillCal')}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-        <Image source={require('../Images/Billroom.png')} style={styles.chat_img}/>
+        <Image source={require('../Images/Billroom.png')} style={styles.img}/>
           <Text h4>  บิลค่าห้อง ค่าน้ำ ค่าไฟ</Text>
         </View>
         <Entypo name='chevron-right' size={40}/>
       </TouchableOpacity>
       <TouchableOpacity style={styles.bill} onPress={() => navigation.navigate('BillHistory')}>
-      <Image source={require('../Images/History.png')} style={styles.chat_img}/>
+      <Image source={require('../Images/History.png')} style={styles.img}/>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Text h4>   ประวัติการทำรายการ</Text>
         </View>
         <Entypo name='chevron-right' size={40}/>
       </TouchableOpacity>
       <TouchableOpacity style={styles.bill} onPress={() => navigation.navigate('UploadSlip')}>
-      <Image source={require('../Images/upload.png')} style={styles.chat_img}/>
+      <Image source={require('../Images/upload.png')} style={styles.img}/>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Text h4>   อัปโหลดสลิป</Text>
         </View>
@@ -48,21 +48,10 @@ const Bills = ({navigation}) => {
 export default Bills
 
 const styles = StyleSheet.create({
-  contialner:{
-    flex:1,
-    backgroundColor: '#e7eaf6'
-  },
-  header:{
-    flexDirection: 'row',
-    padding:10,
-    zIndex:99
-  },
-  headerName:{
-    width:'100%',
-    position:'absolute',
-    top: 10,
-    justifyContent:'center',
-    alignItems: 'center'
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#f2eddd', // Background color
   },
   bill:{
     flexDirection: 'row',
@@ -76,14 +65,9 @@ const styles = StyleSheet.create({
     paddingRight:80,
     paddingLeft:10
   },
-  chat_img:{
+  img:{
     width:75,
     height:75
-  },
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: '#f2eddd', // Background color
   },
   headerBackground: {
     backgroundColor: '#a2a8d3',
