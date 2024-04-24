@@ -19,7 +19,6 @@ const Bells = ({navigation}) => {
           <Text h4>Notifications</Text>
         <Entypo name='chevron-right' size={40}/>
       </TouchableOpacity>
-      
    </SafeAreaView>
   )
 }
