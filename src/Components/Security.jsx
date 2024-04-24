@@ -72,27 +72,27 @@ const Security = () => {
         </View>
       </View>
 
-      <View style={{backgroundColor:'#a2a8d3',borderRadius: 15,width:'100%',height:300,justifyContent:'center'}}> 
+      <View style={{backgroundColor:'#A19DCA',borderRadius: 15,width:'100%',height:300,justifyContent:'center'}}> 
     <View style={{flexDirection: 'row',justifyContent:'space-around',marginBottom:10}}>
-      <TouchableOpacity onPress={handleEmergencyReport} style ={{backgroundColor:'#fefefe',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
+      <TouchableOpacity onPress={handleEmergencyReport} style ={{backgroundColor:'#FAF0E6',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
       <AntDesign name='warning' size={36} color={'#a2a8d3'} />
       <Text style={{fontSize:16,color:'#000000'}}>แจ้งเหตุด่วน</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={handleEmergencyReport2} style ={{backgroundColor:'#fefefe',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
+      <TouchableOpacity onPress={handleEmergencyReport2} style ={{backgroundColor:'#FAF0E6',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
       <AntDesign name='team' size={36} color={'#a2a8d3'} />
       <Text style={{fontSize:16,color:'#000000'}}>   แจ้งเหตุทะเลาะวิวาท</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={handleEmergencyReport3} style ={{backgroundColor:'#fefefe',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
+      <TouchableOpacity onPress={handleEmergencyReport3} style ={{backgroundColor:'#FAF0E6',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
       <AntDesign name='user' size={36} color={'#a2a8d3'} />
       <Text style={{fontSize:16,color:'#000000'}}>  บุคคลแปลกหน้าเข้าหอพัก</Text>
       </TouchableOpacity>
       </View>
       <View style={{flexDirection: 'row',justifyContent:'space-around',marginBottom:10}}>
-      <TouchableOpacity onPress={handleEmergencyReport4} style ={{backgroundColor:'#fefefe',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
+      <TouchableOpacity onPress={handleEmergencyReport4} style ={{backgroundColor:'#FAF0E6',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
       <AntDesign name='profile' size={36} color={'#a2a8d3'} />
       <Text style={{fontSize:16,color:'#000000'}}>  รายงานพฤติกรรม</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={handleEmergencyReport5} style ={{backgroundColor:'#fefefe',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
+      <TouchableOpacity onPress={handleEmergencyReport5} style ={{backgroundColor:'#FAF0E6',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
       <AntDesign name='phone' size={36} color={'#a2a8d3'} />
       <Text style={{fontSize:16,color:'#000000'}}>โทรด่วน</Text>
       </TouchableOpacity>
@@ -107,11 +107,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#e7eaf6', // Background color
+    backgroundColor: '#FAF0E6', // Background color
   },
   headerBackground: {
-    backgroundColor: '#fefefe',
-    borderRadius: 0,
+    backgroundColor: '#A19DCA',
+    borderRadius: 10,
     padding: 10,
     marginBottom: 20,
     alignItems: 'center',
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#FAF0E6',
     justifyContent: 'center',
     alignItems: 'center',
   },

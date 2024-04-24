@@ -39,7 +39,7 @@ export default Chat
 const styles = StyleSheet.create({
   contialner:{
     flex:1,
-    backgroundColor: '#e7eaf6'
+    backgroundColor: '#FAF0E6'
   },
   header:{
     flexDirection: 'row',
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   chat:{
     flexDirection: 'row',
     margin:10,
-    backgroundColor: '#fefefe',
+    backgroundColor: '#A19DCA',
     height: 100,
     borderRadius: 20,
     alignItems: 'center',

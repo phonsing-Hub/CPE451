@@ -11,9 +11,6 @@ const Bells = ({navigation}) => {
         <Entypo name='chevron-left' size={40}/>
       </TouchableOpacity>
       </View>
-      <View style={styles.headerName}>
-        <Text h3>Service</Text>
-      </View>
       <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('Noti')}>
         <Image source={require('../Images/noti.webp')} style={styles.chat_img}/>
           <Text h4>Notifications</Text>
@@ -28,7 +25,7 @@ export default Bells;
 const styles = StyleSheet.create({
   contialner:{
     flex:1,
-    backgroundColor: '#e7eaf6'
+    backgroundColor: '#FAF0E6'
   },
   header:{
     flexDirection: 'row',
@@ -45,7 +42,7 @@ const styles = StyleSheet.create({
   chat:{
     flexDirection: 'row',
     margin:10,
-    backgroundColor: '#fefefe',
+    backgroundColor: '#A19DCA',
     height: 100,
     borderRadius: 20,
     alignItems: 'center',
