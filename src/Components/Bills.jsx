@@ -10,7 +10,7 @@ const Bills = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
     <View style={styles.headerBackground}>
-      <Text style={styles.headerText}>บิลรวมค่าห้อง</Text>
+      <Text style={styles.headerText}>บิลรายเดือน</Text>
     </View>
     <View style={[styles.section, styles.backButton]}>
       <View style={styles.circularButton}>
