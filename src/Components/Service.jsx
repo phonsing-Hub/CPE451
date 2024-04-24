@@ -23,8 +23,6 @@ const Service = ({navigation}) => {
       </TouchableOpacity>
 
 
-
-
       <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('Clean')}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Image source={require('../Images/clean.jpg')} style={styles.chat_img}/>
