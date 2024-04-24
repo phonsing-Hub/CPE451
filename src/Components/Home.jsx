@@ -13,7 +13,7 @@ export default Home = ({navigation}) => {
      <View style={styles.container}>
         <View style={styles.header}>
             <SafeAreaView style={styles.imag_name}>
-                <TouchableOpacity style={{flexDirection: 'row'}} onPress={ navigation.navigate('Profile')}>
+                <TouchableOpacity style={{flexDirection: 'row'}} onPress={ () => navigation.navigate('Profile')}>
             <Image
                 style={styles.logo}
                 source={require('../Images/phonsing_.jpg')}
