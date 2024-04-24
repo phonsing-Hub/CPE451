@@ -21,7 +21,14 @@ const Service = ({navigation}) => {
         </View>
         <Entypo name='chevron-right' size={40}/>
       </TouchableOpacity>
-      
+
+      <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('Clean')}>
+      <View style={{flexDirection: 'row', alignItems: 'center'}}>
+          <Image source={require('../Images/clean.jpg')} style={styles.chat_img}/>
+          <Text h4> แจ้งทำความสะอาด</Text>
+        </View>
+        <Entypo name='chevron-right' size={40}/>
+      </TouchableOpacity>
    </SafeAreaView>
   )
 }
