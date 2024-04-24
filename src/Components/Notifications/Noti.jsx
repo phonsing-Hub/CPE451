@@ -67,15 +67,15 @@ const styles = StyleSheet.create({
     },
     input: {
         borderWidth: 1,
-        backgroundColor: '#b39ddb',
-        borderColor: '#b39ddb',
+        backgroundColor: '#2eddd',
+        borderColor: '#2eddd',
         borderRadius: 15,
         padding: 10,
     },
     detailsInput: {
         textAlignVertical: 'top',
-        borderColor: '#CA9CAC',
-        backgroundColor: '#CA9CAC',
+        borderColor: '#a2a8d3',
+        backgroundColor: '#a2a8d3',
         width: 370, // Set the desired width
         height: 220,
     },

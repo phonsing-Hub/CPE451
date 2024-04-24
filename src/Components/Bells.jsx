@@ -28,7 +28,7 @@ export default Bells;
 const styles = StyleSheet.create({
   contialner:{
     flex:1,
-    backgroundColor: '#e7eaf6'
+    backgroundColor: '#f2eddd'
   },
   header:{
     flexDirection: 'row',
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   chat:{
     flexDirection: 'row',
     margin:10,
-    backgroundColor: '#fefefe',
+    backgroundColor: '#a2a8d3',
     height: 100,
     borderRadius: 20,
     alignItems: 'center',
