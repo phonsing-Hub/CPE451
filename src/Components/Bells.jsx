@@ -15,18 +15,10 @@ const Bells = ({navigation}) => {
         <Text h3>Service</Text>
       </View>
       <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('Noti')}>
-        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+        <Image source={require('../Images/noti.webp')} style={styles.chat_img}/>
           <Text h4>Notifications</Text>
-        </View>
         <Entypo name='chevron-right' size={40}/>
       </TouchableOpacity>
-      {/* <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('chatAll')}>
-      <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <Image source={require('../Images/creative.png')} style={styles.chat_img}/>
-          <Text h4> เเชทรวม</Text>
-        </View>
-        <Entypo name='chevron-right' size={40}/>
-      </TouchableOpacity> */}
    </SafeAreaView>
   )
 }

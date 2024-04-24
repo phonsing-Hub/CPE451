@@ -29,6 +29,7 @@ import EmergencyReportScreen4 from './src/Components/Security/EmergencyReportScr
 import EmergencyReportScreen5 from './src/Components/Security/EmergencyReportScreen5';
 import Repair from './src/Components/Ser1/Ser1';
 import Clean from './src/Components/Ser1/Ser2';
+import Noti from './src/Components/Notifications/Noti';
 
 const Stack = createNativeStackNavigator();
 const AuthenticatedUserContext = createContext({});
@@ -67,6 +68,7 @@ function HomeStack() {
       <Stack.Screen name="EmergencyReportScreen5" component={EmergencyReportScreen5} />
       <Stack.Screen name="Repair" component={Repair} />
       <Stack.Screen name="Clean" component={Clean} />
+      <Stack.Screen name="Noti" component={Noti} />
     </Stack.Navigator>
 
   );
