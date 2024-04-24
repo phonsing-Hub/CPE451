@@ -24,7 +24,6 @@ export default MyStack = () => {
       <Stack.Screen name='bells' component={Bells}/>
       <Stack.Screen name='contract' component={Contract}/>
       <Stack.Screen name='service' component={Service}/>
-
       <Stack.Screen name='pngtree' component={Pngtree}/>
     </Stack.Navigator>
   );

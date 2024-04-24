@@ -13,6 +13,7 @@ export default Home = ({navigation}) => {
      <View style={styles.container}>
         <View style={styles.header}>
             <SafeAreaView style={styles.imag_name}>
+                <TouchableOpacity style={{flexDirection: 'row'}} onPress={ navigation.navigate('Profile')}>
             <Image
                 style={styles.logo}
                 source={require('../Images/phonsing_.jpg')}
@@ -21,6 +22,7 @@ export default Home = ({navigation}) => {
                 <Text h3>Wecome</Text>
                 <Text h4>{usename}</Text>
             </View>
+            </TouchableOpacity>
             </SafeAreaView>
             <View style={styles.search}>
             <TextInput
@@ -80,12 +82,12 @@ export default Home = ({navigation}) => {
 const styles  = StyleSheet.create({
     container:{
         flex:1,
-        backgroundColor: '#e7eaf6'
+        backgroundColor: '#FAF0E6'
     },
     header:{
         width: '100%',
         height: 250,
-        backgroundColor: '#a2a8d3'
+        backgroundColor: '#A19DCA'
     },
     imag_name:{
         flexDirection: 'row',
@@ -131,7 +133,7 @@ const styles  = StyleSheet.create({
     menu: {
         margin: 20,
         marginTop: 5,
-        backgroundColor: '#a2a8d3',
+        backgroundColor: '#A19DCA',
         borderRadius: 20,
         padding: 20,
         paddingTop:30
@@ -145,7 +147,7 @@ const styles  = StyleSheet.create({
     menuIcon: {
         width: '27%', // ความกว้างของแต่ละไอคอนจะเป็น 30% ของพื้นที่ทั้งหมดในแนวนอน
         aspectRatio: 1, // ให้ขนาดของไอคอนเป็นสี่เหลี่ยมจตุรัส
-        backgroundColor: '#fefefe',
+        backgroundColor: '#FAF0E6',
         borderRadius: 10,
         justifyContent: 'space-evenly',
         alignItems:'center'
