@@ -1,14 +1,13 @@
 import React from 'react'
-import {StyleSheet,View,Image, SafeAreaView, TouchableOpacity,Button,TextInput} from 'react-native';
+import {StyleSheet,View, SafeAreaView, TouchableOpacity,Button,TextInput} from 'react-native';
 import { Text } from '@rneui/themed';
-import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign'
 
-const Repair =  ({navigation}) => {
+const Clean =  ({navigation}) => {
     return(
 <SafeAreaView style={styles.container}>
     <View style={styles.headerBackground}>
-      <Text style={styles.headerText}>แจ้งซ่อม</Text>
+      <Text style={styles.headerText}>แจ้งทำความสะอาด</Text>
     </View>
 
     <View style={[styles.section1, styles.backButton]}>
@@ -24,27 +23,21 @@ const Repair =  ({navigation}) => {
      <Text style={styles.label}>         </Text>
       <TextInput
         style={styles.input}
-        placeholder="            แจ้งซ่อมบำรุงของหอพัก"
+        placeholder="            แจ้งทำความสะอาดห้องพัก"
       
       />
 
      <Text style={styles.label}>         </Text>
       <TextInput
         style={styles.input}
-        placeholder="            จอง วัน/เดือน ซ่อมบำรุง"
+        placeholder="            จอง วัน/เดือน ทำความสะอาด"
       />
 
       
       
     </View>  
 
-    <View style={styles.imageContainer}>
-        <Image
-          source={require('../../Images/air.jpg')}
-          style={styles.image}
-          resizeMode="cover"
-        />
-      </View>
+   
 
     <View style={styles.section}>
       <Button title="Report" onPress={() => console.log('Report success')} color="#78A3D4" />
@@ -64,7 +57,7 @@ const Repair =  ({navigation}) => {
        
     )
 }
-export default Repair
+export default Clean
 
 const styles = StyleSheet.create({
   container: {
@@ -95,11 +88,7 @@ const styles = StyleSheet.create({
   },
     
    
-    image: {
-      width: 390,
-      height:300,      borderRadius: 10,right:10,
-      marginTop:20
-    },
+
     container: {
       flex: 1,
       padding: 20,
