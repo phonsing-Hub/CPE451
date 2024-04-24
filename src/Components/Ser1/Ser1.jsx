@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyleSheet,View,Image, SafeAreaView, TouchableOpacity,Button } from 'react-native';
+import {StyleSheet,View,Image, SafeAreaView, TouchableOpacity,Button,TextInput} from 'react-native';
 import { Text } from '@rneui/themed';
 import Entypo from 'react-native-vector-icons/Entypo';
 
@@ -12,17 +12,31 @@ const Repair =  ({navigation}) => {
       </TouchableOpacity>
       </View>
 
-       <Text style={styles.title}>ซ่อม-บำรุง demo</Text>
-        
+      <Text style={styles.title}>แจ้งซ่อม</Text>
 
-      
      <View style = {styles.buttonContainer}>
-      <Button title="ประปา" onPress= {() =>{}} />
-      <Button title='พัดลม' onPress={() => {}} />
+     <Text style={styles.label}>                       </Text>
+      <TextInput
+        style={styles.input}
+        placeholder="                                      แจ้งเหตุอุปกรในหรพักเสีย"
+      />
+
+     <Text style={styles.label}>         </Text>
+      <TextInput
+        style={styles.input}
+        placeholder="                                       จอง วัน/เดือน ซ่อมบำรุง"
+      />
+
       <Button title='ไฟฟ้า' onPress={() => {}} />
-      <Button title='แอร์' onPress={() => {}} />
+      
     </View>  
-    
+
+    <View style={styles.section}>
+      <Button title="Report" onPress={() => console.log('Submitted')} color="#78A3D4" />
+      </View>
+
+
+
     <Text style={styles.title}>ทำความสะอาด demo</Text>
 
     <View style = {styles.buttonContainer}>
