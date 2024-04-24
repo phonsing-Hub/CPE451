@@ -54,7 +54,7 @@ export default Home = ({navigation}) => {
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.menuIcon} onPress={() => navigation.navigate('bills')}>
                     <Icon6 name='money-bill-transfer' size={36} color={'#8594e4'}/>
-                    <Text>ค่าห้อง</Text>
+                    <Text>บิลรายเดือน</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.row}>
