@@ -16,17 +16,21 @@ const Service = ({navigation}) => {
       </View>
       <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('Repair')}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <Text h4>ติดต่อService</Text>
+        <Image source={require('../Images/sevice.png')} style={styles.chat_img}/>
+          <Text h4> ติดต่อแจ้งซ่อม</Text>
         </View>
         <Entypo name='chevron-right' size={40}/>
       </TouchableOpacity>
-      {/* <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('chatAll')}>
+
+
+
+      <TouchableOpacity style={styles.chat} onPress={() => navigation.navigate('Clean')}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <Image source={require('../Images/creative.png')} style={styles.chat_img}/>
-          <Text h4> เเชทรวม</Text>
+          <Image source={require('../Images/clean.jpg')} style={styles.chat_img}/>
+          <Text h4> แจ้งทำความสะอาด</Text>
         </View>
         <Entypo name='chevron-right' size={40}/>
-      </TouchableOpacity> */}
+      </TouchableOpacity>
    </SafeAreaView>
   )
 }
