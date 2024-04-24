@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#e7eaf6',
+    backgroundColor: '#FAF0E6',
   },
   section: {
     marginTop: 20,

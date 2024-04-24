@@ -51,17 +51,17 @@ const Contract = () => {
         </View>
       </View>
 
-     <View style={{backgroundColor:'#a2a8d3',borderRadius: 15,width:'100%',height:200,justifyContent:'center'}}> 
+     <View style={{backgroundColor:'#A19DCA',borderRadius: 15,width:'100%',height:200,justifyContent:'center'}}> 
     <View style={{flexDirection: 'row',justifyContent:'space-around',marginBottom:10}}>
-      <TouchableOpacity onPress={handleRoom} style ={{backgroundColor:'#fefefe',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
+      <TouchableOpacity onPress={handleRoom} style ={{backgroundColor:'#FAF0E6',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
       <AntDesign name='home' size={36} color={'#a2a8d3'} />
       <Text style={{fontSize:16,color:'#000000'}}>ข้อมูลห้องพัก</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={handleReturn} style ={{backgroundColor:'#fefefe',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
+      <TouchableOpacity onPress={handleReturn} style ={{backgroundColor:'#FAF0E6',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
       <AntDesign name='contacts' size={36} color={'#a2a8d3'} />
       <Text style={{fontSize:16,color:'#000000'}}>ข้อมูลการเช่า</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={handleHire} style ={{backgroundColor:'#fefefe',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
+      <TouchableOpacity onPress={handleHire} style ={{backgroundColor:'#FAF0E6',width:100,height:100, justifyContent:'center',alignItems:'center',borderRadius: 15,}}>
       <AntDesign name='export2' size={36} color={'#a2a8d3'} />
       <Text style={{fontSize:16,color:'#000000'}}>ข้อมูลคืนห้อง</Text>
       </TouchableOpacity>
@@ -78,11 +78,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#e7eaf6', // Background color
+    backgroundColor: '#FAF0E6', // Background color
   },
   headerBackground: {
-    backgroundColor: '#fefefe',
-    borderRadius: 8,
+    backgroundColor: '#A19DCA',
+    borderRadius: 10,
     padding: 10,
     marginBottom: 20,
     alignItems: 'center',
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#fefefe',
+    backgroundColor: '#FAF0E6',
     justifyContent: 'center',
     alignItems: 'center',
   },
