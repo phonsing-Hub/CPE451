@@ -23,6 +23,7 @@
     "@rneui/themed": "^0.0.0-edge.2",
     "@stream-io/flat-list-mvcp": "^0.10.3",
     "firebase": "^10.11.0",
+    "lucide-react-native": "^0.373.0",
     "react": "18.2.0",
     "react-native": "0.73.6",
     "react-native-document-picker": "^9.1.1",

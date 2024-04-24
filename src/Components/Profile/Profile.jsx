@@ -1,6 +1,5 @@
 import {
   View,
-  SafeAreaView,
   StyleSheet,
   TouchableOpacity,
   Image,
@@ -9,6 +8,7 @@ import {
 import React from 'react';
 import Entypo from 'react-native-vector-icons/Entypo';
 import {Text} from '@rneui/base';
+import { Camera } from 'lucide-react-native';
 
 const Profile = ({navigation}) => {
   const [text1, onChangeText1] = React.useState('Useless Text');
@@ -33,6 +33,9 @@ const Profile = ({navigation}) => {
             source={require('../../Images/phonsing_.jpg')}
             style={styles.profile}
           />
+            <TouchableOpacity>
+            <Camera color="#000000" size={36}/>
+            </TouchableOpacity>
         </View>
 
         <View style={{marginTop: 50, height: 300, justifyContent: 'space-evenly'}}>
